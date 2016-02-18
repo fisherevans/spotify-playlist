@@ -39,7 +39,7 @@ public class AuthListener extends AbstractHandler {
                 public void run() {
                     try {
                         // sleep thread so server can give a good response to http client
-                        Thread.sleep(500);
+                        Thread.sleep(100);
                         server.stop();
                         importer.doImport(code);
                     } catch (Exception e ) {

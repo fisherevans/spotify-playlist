@@ -13,10 +13,6 @@ import java.util.List;
 public class Importer {
     private static final File IMPORTS_DIR = new File("imports");
 
-    static {
-        ((StdErrLog)Log.getRootLogger()).setLevel(StdErrLog.LEVEL_WARN);
-    }
-
     public Settings settings;
     public Api api;
 
@@ -67,6 +63,7 @@ public class Importer {
     }
 
     public static void main(String[] args) {
+        ((StdErrLog)Log.getRootLogger()).setLevel(StdErrLog.LEVEL_WARN);
         System.out.println("Create a Spotify app here: https://developer.spotify.com/my-applications/#!/applications");
         System.out.println("Make sure to add the redirectURL: " + Settings.redirectURI);
         System.out.println("Add the Chrome bookmark found here: src/resources/script/gmusic_export.js");

@@ -3,3 +3,4 @@ defaults.properties
 .idea
 spotify-playlists.iml
 target
+dependency-reduced-pom.xml
